@@ -22,7 +22,7 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     contentAlignment = Alignment.Center
                 ) {
-                    Text("NFC Lock IFTM\n3Aproxime o celular do leitor")
+                    Text("NFC Lock IFTM\nAproxime o celular do leitor")
                     Log.d("HceServiceTeste", "teste")
 
                 }
