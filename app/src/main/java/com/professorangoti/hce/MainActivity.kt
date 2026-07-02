@@ -1,6 +1,6 @@
 package com.professorangoti.hce
 
-import com.professorangoti.hce.R
+//import com.professorangoti.hce.R
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.*
 import androidx.compose.material3.Surface
@@ -33,26 +33,22 @@ fun TelaCentralizada() {
         Column(
             modifier = Modifier
                 .fillMaxSize()
-                .padding(16.dp), // Dá um respiro nas bordas da tela
-            // Centraliza os itens verticalmente (no meio da tela)
+                .padding(16.dp),
+
             verticalArrangement = Arrangement.Center,
-            // Centraliza os itens horizontalmente
+
             horizontalAlignment = Alignment.CenterHorizontally
         ) {
 
-            // 3. Imagem Central
-            // Para usar sua própria imagem, coloque-a na pasta res/drawable e
-            // troque 'seu_arquivo_de_imagem' pelo nome da sua imagem (sem a extensão .png/.jpg).
-             Image(
+
+            Image(
                 painter = painterResource(R.drawable.iftm),
                 contentDescription = "Logo IF",
                 modifier = Modifier.size(150.dp)
             )
 
-            // Spacer é usado para dar espaço vazio entre os elementos
             Spacer(modifier = Modifier.height(32.dp))
 
-            // 4. Textos centralizados
             Text(
                 text = "IF",
                 color = vermelho,
@@ -90,7 +86,6 @@ fun TelaCentralizada() {
     }
 }
 
-// O Preview permite ver a tela no Android Studio sem precisar rodar no emulador
 @Preview(showBackground = true)
 @Composable
 fun TelaCentralizadaPreview() {
