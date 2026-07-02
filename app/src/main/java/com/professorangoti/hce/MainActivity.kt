@@ -1,6 +1,5 @@
 package com.professorangoti.hce
 
-//import com.professorangoti.hce.R
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.*
 import androidx.compose.material3.Surface
@@ -18,18 +17,18 @@ import androidx.compose.ui.unit.sp
 
 @Composable
 fun TelaCentralizada() {
-    // 1. Definindo a sua paleta de cores
+
     val corFundo = Color.White
     val verdeClaro = Color(0xFFA5D6A7)
-    val verdeEscuro = Color(0xFF3FA14C)// Tom de verde claro agradável
-    val vermelho = Color(0xFFE53935)   // Tom de vermelho padrão
+    val verdeEscuro = Color(0xFF3FA14C)
+    val vermelho = Color(0xFFE53935)
 
-    // Surface atua como o "fundo" da nossa tela
+
     Surface(
         modifier = Modifier.fillMaxSize(),
         color = corFundo
     ) {
-        // 2. Column empilha os itens verticalmente
+
         Column(
             modifier = Modifier
                 .fillMaxSize()
